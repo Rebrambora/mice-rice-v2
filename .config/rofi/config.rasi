@@ -1,0 +1,165 @@
+configuration {
+lines:							6;
+columns:						2;
+font: 							"Mono 10";
+    bw: 							0;
+    location: 						0;
+    padding: 						0;
+    fixed-num-lines: 				true;
+    show-icons: 					false;
+    sidebar-mode: 					true;
+    separator-style: 				"beam";
+    hide-scrollbar: 				true;
+    scroll-method: 					0;
+    click-to-exit: 					true;
+    show-match: 					false;
+    combi-hide-mode-prefix: 		false;
+    display-window: 				"Window";
+    display-windowcd: 				"Windowcd";
+    display-run: 					"Commands";
+    display-drun: 					"start";
+    display-combi: 					"Combi";
+}
+
+window {
+
+padding: 20px;
+background-color:             	#333333;
+location:                       west;
+x-offset:                       10px;
+y-offset:                       250px;
+}
+
+* {
+    background-color:             	#333333;
+}
+
+window {
+    border: 						0px;
+    border-color: 					#fac038;
+    height: 						400px;
+    width: 							20%;
+}
+
+prompt {
+    spacing: 						0;
+    border: 						0;
+    text-color: 					#fac038;
+}
+
+textbox-prompt-colon {
+    expand: 						false;
+    str: 							"  ";
+    margin:							0px 4px 0px 0px;
+    text-color: 					inherit;
+}
+
+entry {
+    spacing:    					0;
+    text-color: 					#fac038;
+}
+
+case-indicator {
+    spacing:    					0;
+    text-color: 					#fac038;
+}
+
+inputbar {
+    spacing:    					0px;
+    text-color: 					#fac038;
+    children: 						[ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+
+listview {
+    fixed-height: 					0;
+    border: 						0px;
+    border-color: 					#fac038;
+    spacing: 						4px;
+    scrollbar: 						false;
+    padding: 						5px 5px 0px 5px;
+}
+
+element {
+    border: 						0px;
+    border-radius: 					0px;
+    padding: 						5px;
+}
+element normal.normal {
+    background-color: 				#333333;
+    text-color:       				#fac038;
+}
+element normal.urgent {
+    background-color: 				#333333;
+    text-color:       				#fac038;
+}
+element normal.active {
+    background-color: 				#fac038;
+    text-color:       				#333333;
+}
+element selected.normal {
+    background-color: 				#fac038;
+    text-color:       				#333333;
+}
+element selected.urgent {
+    background-color: 				#333333;
+    text-color:       				#fac038;
+}
+element selected.active {
+    background-color: 				#fac038;
+    text-color:       				#333333;
+}
+element alternate.normal {
+    background-color: 				#333333;
+    text-color:       				#fac038;
+}
+element alternate.urgent {
+    background-color: 				#333333;
+    text-color:       				#fac038;
+}
+element alternate.active {
+    background-color: 				#333333;
+    text-color:       				#fac038;
+}
+
+sidebar {
+    border:       					0px;
+    border-color: 					#fac038;
+    border-radius: 					0px;
+}
+
+button {
+    background-color:             	#fac038;
+    margin: 						5px;
+    padding: 						5px;
+    text-color: 					#333333;
+    border: 						0px;
+    border-radius: 					0px;
+    border-color: 					#333333;
+}
+
+button selected {
+    background-color:             	#fac038;
+    text-color: 					#333333;
+    border: 						0px;
+    border-radius: 					0px;
+    border-color: 					#333333;
+}
+
+scrollbar {
+    width:        					4px;
+    border:       					0px;
+    handle-color: 					#fac038;
+    handle-width: 					8px;
+    padding:      					0;
+}
+
+message {
+    border: 						0px;
+    border-color: 					#fac038;
+    padding: 						1px;
+}
+
+textbox {
+    text-color: 					#fac038;
+}
