@@ -14,3 +14,4 @@ feh --bg-max --randomize ~/.wallpaper/* &
 
 # Bar
 tint2 &
+firefox &
