@@ -1,8 +1,3 @@
 #!/bin/bash/
 
-if (( $(spotify-now -e "80")==80 )); then
-    echo "*sad spotify noises*" 
-else
-
-spotify-now -i "%title - %artist" -p "▶"
-fi
+upower -i $(upower -e |grep battery) | grep --color=never -E "percentage" | grep -o -E '[%0-9]+'
