@@ -54,7 +54,7 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Mono</name>
@@ -153,10 +153,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>10</top>
-    <bottom>10</bottom>
-    <left>10</left>
-    <right>10</right>
+    <top>0</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>TopLeft</position>
@@ -164,7 +164,7 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
-    <stacking>Above</stacking>
+    <stacking>Normal</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Vertical</direction>
     <!-- 'Vertical' or 'Horizontal' -->
@@ -183,6 +183,14 @@
         <command>rofi -show drun</command>
       </action>
     </keybind>
+    <keybind key="A-n">
+	    <action name="execute">
+    		<command>bash ~/scripts/notes.sh</command>
+	</action>
+
+
+    </keybind>
+
     <keybind key="W-a">
 	<action name="ToggleMaximize"/>
     </keybind>
@@ -574,5 +582,14 @@
 		      <maximized>true</maximized>
 		          <decor>yes</decor>
           </application>
-  </applications>
+	  <application name="*erm*">
+		  <maximized>false</maximized>
+		  <decor>no</decor>
+		  <position force="yes">
+			  <x>1435</x>
+			  <y>565</y>
+		  </position>
+		  <layer>above</layer>
+	  </application>
+   </applications>
 </openbox_config>
