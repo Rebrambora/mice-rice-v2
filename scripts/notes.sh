@@ -7,7 +7,6 @@ if [[ ! -e ~/notes/ ]]; then
 fi
 
 echo -e "Press n to make new note, l to open last opened note, \na number to open specific note or q to quit"
-echo "$num_lastn"
 read var
 while [ ! $var == 'q' ] 
 do
